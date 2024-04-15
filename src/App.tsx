@@ -9,9 +9,9 @@ function App() {
       <div className="logo_wrapper">
         <img className="logo" src={logo} alt="logo" />
       </div>
-      <div>
+      <div className="app_container">
         <MainPage />
-        <Buttons />
+        {/* <Buttons /> */}
       </div>
     </div>
   );

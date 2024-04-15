@@ -1,0 +1,91 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1f1f22;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  padding-top: 100px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+
+input {
+  margin: 30px;
+  width: 350px;
+  height: 27px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #264653;
+  background-color: #e9ecef;
+  color: #264653;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border: 3px solid #2a9d8f;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 24px;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-enabled:hover {
+  background-color: #264653;
+  transform: scale(1.05);
+}
+.button-animate {
+  transition: transform 0.3s; /* Smooth transition for initial movement */
+  overflow: hidden;
+}
+.button-animate.hovered {
+  animation: slideAway 1s forwards; /* Apply the animation when hovered at least once */
+}
+
+.button-animate:hover {
+  animation: slideAway 2s infinite alternate;
+}
+@keyframes slideAway {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px); /* The button will move to the right */
+  }
+}
+
+.button-disabled {
+  cursor: help;
+  opacity: 0.5; /* Visual feedback for disabled state */
+}
+
+.button-enabled:hover {
+  background-color: #264653;
+  transform: scale(1.05);
+}
+.tooltip_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip_invisible {
+  visibility: hidden;
+}

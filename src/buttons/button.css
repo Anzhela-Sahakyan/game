@@ -1,25 +1,18 @@
-body {
-  background: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 .voltage-button {
   position: relative;
   button {
     color: white;
-    background: #0d1127;
+    background: #262f5f;
     padding: 1.6rem 5rem 1.8rem 5rem;
     border-radius: 5rem;
-    border: 5px solid #5978f3;
+    border: 5px solid #2343c4;
     font-size: 1.8rem;
     line-height: 1em;
     letter-spacing: 0.075em;
     transition: background 0.3s;
     &:hover {
+      border: 5px solidrgb(247, 247, 247) 4;
       cursor: pointer;
-      background: #0f1c53;
       + svg,
       + svg + .dots {
         opacity: 1;
@@ -41,12 +34,12 @@ body {
       stroke-dasharray: 100;
       filter: url("#glow");
       &.line-1 {
-        stroke: #f6de8d;
+        stroke: #1dcfa9;
         stroke-dashoffset: 0;
         animation: spark-1 3s linear infinite;
       }
       &.line-2 {
-        stroke: #6bfeff;
+        stroke: #25c3eb;
         stroke-dashoffset: 500;
         animation: spark-2 3s linear infinite;
       }
