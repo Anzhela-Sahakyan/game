@@ -2,6 +2,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #1f1f22;
   padding: 20px;
+  align-items: center;
 }
 
 .container {
@@ -83,7 +84,13 @@ button {
 }
 .tooltip_visible {
   visibility: visible;
+  background-color: #2a9d8f;
+  border: 1px solid #aab6bb;
+  margin-top: 25px;
   opacity: 1;
+  padding: 5px;
+  color: #fff;
+  border-radius: 4px;
 }
 
 .tooltip_invisible {

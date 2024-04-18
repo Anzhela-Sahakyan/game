@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./mainPage.css";
-export default function MainPage() {
+
+export default function MainPage({
+  onStartFunction,
+}: {
+  onStartFunction: () => void;
+}) {
   const [inputValue, setInputValue] = useState<string>("");
   const [hovered, setHovered] = useState<boolean>(false);
 
@@ -20,6 +25,7 @@ export default function MainPage() {
         onMouseEnter={() => !hovered && setHovered(true)}
         onMouseLeave={() => setHovered(true)}
         disabled={!inputValue}
+        onClick={onStartFunction}
       >
         Submit
       </button>
